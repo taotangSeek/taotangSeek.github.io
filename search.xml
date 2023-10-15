@@ -11,10 +11,18 @@
         <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><ul><li>Welcome to my homepage. Every programmer starts with “Hello World”, so I start my blog with “Hello World”<ul><li>Welcome to follow my <a href="https://github.com/taotangSeek">github</a><ul><li>Author : <a href="https://cic.tju.edu.cn/">Tianjin University CIC</a> Tao Tang</li></ul></li></ul></li></ul><p><img src="/2021/12/16/hello-world/t012dd538150f0687d8.jpg" alt="天津大学_360百科" loading="lazy"></p>]]></content>
       
       
+      <categories>
+          
+          <category> Hello World </category>
+          
+      </categories>
+      
       
         <tags>
             
-            <tag> begin </tag>
+            <tag> Begin </tag>
+            
+            <tag> Life </tag>
             
         </tags>
       
