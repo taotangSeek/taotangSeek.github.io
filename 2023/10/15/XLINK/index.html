@@ -41,53 +41,44 @@ document.addEventListener("pjax:success", sendPageView);</script><script>(functi
 <meta property="og:description" content="XLINK：QoE-Driven Multi-Path QUIC Transport in Large-scale Video Services">
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="https://taotangseek.github.io/2023/10/15/XLINK/image-20230918092559312.png">
-<meta property="og:image" content="https://taotangseek.github.io/2023/10/15/XLINK/image-20230918093825351.png">
 <meta property="og:image" content="https://taotangseek.github.io/2023/10/15/XLINK/image-20230918094747923.png">
 <meta property="og:image" content="https://taotangseek.github.io/2023/10/15/XLINK/image-20230918101710249.png">
-<meta property="og:image" content="https://taotangseek.github.io/2023/10/15/XLINK/image-20230918103943018.png">
-<meta property="og:image" content="https://taotangseek.github.io/2023/10/15/XLINK/image-20230918112726847.png">
-<meta property="og:image" content="https://taotangseek.github.io/2023/10/15/XLINK/image-20230918134758263.png">
-<meta property="og:image" content="https://taotangseek.github.io/2023/10/15/XLINK/image-20230918135611129.png">
-<meta property="og:image" content="https://taotangseek.github.io/2023/10/15/XLINK/image-20230918144016477.png">
-<meta property="og:image" content="https://taotangseek.github.io/2023/10/15/XLINK/image-20230919145957260.png">
 <meta property="og:image" content="https://taotangseek.github.io/2023/10/15/XLINK/image-20230919152747416.png">
-<meta property="og:image" content="https://taotangseek.github.io/2023/10/15/XLINK/image-20230919153915630.png">
-<meta property="og:image" content="https://taotangseek.github.io/2023/10/15/XLINK/image-20230919154051997.png">
 <meta property="og:image" content="https://taotangseek.github.io/2023/10/15/XLINK/image-20230919161835070.png">
-<meta property="og:image" content="https://taotangseek.github.io/2023/10/15/XLINK/image-20230919163800482.png">
 <meta property="og:image" content="https://taotangseek.github.io/2023/10/15/XLINK/image-20230918202755804.png">
 <meta property="article:published_time" content="2023-10-15T12:51:40.000Z">
-<meta property="article:modified_time" content="2023-10-15T13:52:51.222Z">
+<meta property="article:modified_time" content="2023-10-25T07:46:54.993Z">
 <meta property="article:author" content="Tao Tang">
+<meta property="article:tag" content="Multipath">
+<meta property="article:tag" content="Mate">
 <meta property="article:tag" content="Stream Media">
 <meta property="article:tag" content="Reading">
-<meta property="article:tag" content="Mate">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://taotangseek.github.io/2023/10/15/XLINK/image-20230918092559312.png"><script src="/js/ui/mode.js"></script></head><body><script defer src="https://cdn.jsdelivr.net/npm/animejs@latest"></script><script defer src="/js/ui/fireworks.js"></script><canvas class="fireworks"></canvas><div class="container"><a class="sidebar-toggle hty-icon-button" id="menu-btn"><div class="hamburger hamburger--spin" type="button"><span class="hamburger-box"><span class="hamburger-inner"></span></span></div></a><div class="sidebar-toggle sidebar-overlay"></div><aside class="sidebar"><script src="/js/sidebar.js"></script><ul class="sidebar-nav"><li class="sidebar-nav-item sidebar-nav-toc hty-icon-button sidebar-nav-active" data-target="post-toc-wrap" title="Table of Contents"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-list-ordered"></use></svg></li><li class="sidebar-nav-item sidebar-nav-overview hty-icon-button" data-target="site-overview-wrap" title="Overview"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-passport-line"></use></svg></li></ul><div class="sidebar-panel" id="site-overview-wrap"><div class="site-info mickey-mouse"><a class="site-author-avatar" href="/about/" title="Tao Tang"><img width="96" loading="lazy" src="/images/cat.png" alt="Tao Tang"><span class="site-author-status" title="永远相信美好的事情即将发生">😊</span></a><div class="site-author-name"><a href="/about/">Tao Tang</a></div><span class="site-name">blog | of TT</span><sub class="site-subtitle">TJU MS</sub><div class="site-desciption">welcome to my blog, you can contact me through the following contact information</div></div><nav class="site-state"><a class="site-state-item hty-icon-button icon-home" href="/" title="Home"><span class="site-state-item-icon"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-home-4-line"></use></svg></span></a><div class="site-state-item"><a href="/archives/" title="Archives"><span class="site-state-item-icon"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-archive-line"></use></svg></span><span class="site-state-item-count">2</span></a></div><div class="site-state-item"><a href="/categories/" title="Categories"><span class="site-state-item-icon"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-folder-2-line"></use></svg></span><span class="site-state-item-count">2</span></a></div><div class="site-state-item"><a href="/tags/" title="Tags"><span class="site-state-item-icon"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-price-tag-3-line"></use></svg></span><span class="site-state-item-count">5</span></a></div><a class="site-state-item hty-icon-button" href="/about/#comment" title="留言板"><span class="site-state-item-icon"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-clipboard-line"></use></svg></span></a></nav><hr style="margin-bottom:0.5rem"><div class="links-of-author"><a class="links-of-author-item hty-icon-button" rel="noopener" href="/images/qq.png" title="加我QQ ~~" target="_blank" style="color:#12B7F5"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-qq-line"></use></svg></a><a class="links-of-author-item hty-icon-button" rel="noopener" href="/images/weixin.jpg" title="加我微信 ~~" target="_blank" style="color:#1AAD19"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-wechat-2-line"></use></svg></a><a class="links-of-author-item hty-icon-button" rel="noopener" href="https://github.com/taotangSeek" title="GitHub" target="_blank" style="color:#6e5494"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-github-line"></use></svg></a><a class="links-of-author-item hty-icon-button" rel="noopener" href="tangtao@tju.edu.cn" title="E-Mail" target="_blank" style="color:#8E71C1"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-mail-line"></use></svg></a></div><hr style="margin:0.5rem 1rem"><div class="links"><a class="links-item hty-icon-button" href="/links/" title="我的小伙伴们" style="color:dodgerblue"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-genderless-line"></use></svg></a></div><br><a class="links-item hty-icon-button" id="toggle-mode-btn" href="javascript:;" title="Mode" style="color: #f1cb64"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-contrast-2-line"></use></svg></a></div><div class="sidebar-panel sidebar-panel-active" id="post-toc-wrap"><div class="post-toc"><div class="post-toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#XLINK"><span class="toc-number">1.</span> <span class="toc-text">XLINK:</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E2%85%A0-Introduction"><span class="toc-number">1.1.</span> <span class="toc-text">Ⅰ. Introduction</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E2%85%A1-Motivation"><span class="toc-number">1.2.</span> <span class="toc-text">Ⅱ. Motivation</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E2%85%A2-Experience-with-vanilla-Multi-Path-QUIC"><span class="toc-number">1.3.</span> <span class="toc-text">Ⅲ. Experience with vanilla Multi-Path QUIC</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E2%85%A3-XLINK-Design-Overview"><span class="toc-number">1.4.</span> <span class="toc-text">Ⅳ. XLINK Design Overview</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E2%85%A4-QoE-Driven-Scheduling-AND-Path-Management"><span class="toc-number">1.5.</span> <span class="toc-text">Ⅴ. QoE-Driven Scheduling AND Path Management</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E2%85%A5-PROTOCOL-AND-IMPLEMENTATION"><span class="toc-number">1.6.</span> <span class="toc-text">Ⅵ. PROTOCOL AND IMPLEMENTATION</span></a></li></ol></li></ol></div></div></div><div class="tag-cloud"><div class="tag-cloud-tags"><a href="/tags/Begin/" style="font-size: 12px; color: #999">Begin</a> <a href="/tags/Life/" style="font-size: 12px; color: #999">Life</a> <a href="/tags/Mate/" style="font-size: 12px; color: #999">Mate</a> <a href="/tags/Reading/" style="font-size: 12px; color: #999">Reading</a> <a href="/tags/Stream-Media/" style="font-size: 12px; color: #999">Stream Media</a></div></div></aside><main class="sidebar-translate" id="content"><div id="post"><article class="hty-card post-block" itemscope itemtype="https://schema.org/Article"><link itemprop="mainEntityOfPage" href="https://taotangseek.github.io/2023/10/15/XLINK/"><span hidden itemprop="author" itemscope itemtype="https://schema.org/Person"><meta itemprop="name" content="Tao Tang"><meta itemprop="description"></span><span hidden itemprop="publisher" itemscope itemtype="https://schema.org/Organization"><meta itemprop="name" content="blog | of TT"></span><header class="post-header"><h1 class="post-title" itemprop="name headline">XLINK</h1><div class="post-meta"><div class="post-time" style="display:block"><span class="post-meta-item-icon"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-calendar-line"></use></svg></span> <time title="Created: 2023-10-15 20:51:40" itemprop="dateCreated datePublished" datetime="2023-10-15T20:51:40+08:00">2023-10-15</time></div><span class="post-count"><span class="post-symbolcount"><span class="post-meta-item-icon" title="Word count in article"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-file-word-line"></use></svg></span> <span title="Word count in article">6.5k</span><span class="post-meta-divider">-</span><span class="post-meta-item-icon" title="Reading time"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-timer-line"></use></svg></span> <span title="Reading time">23m</span></span></span><span class="post-busuanzi"><span class="post-meta-divider">-</span><span class="post-meta-item-icon" title="Views"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-eye-line"></use></svg> <span id="busuanzi_value_page_pv"></span></span></span><div class="post-classify"><span class="post-category"> <span class="post-meta-item-icon" style="margin-right:3px;"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-folder-line"></use></svg></span><span itemprop="about" itemscope itemtype="https://schema.org/Thing"><a class="category-item" href="/categories/%E6%B5%81%E5%AA%92%E4%BD%93%E4%BC%A0%E8%BE%93/" style="--text-color:var(--hty-text-color)" itemprop="url" rel="index"><span itemprop="text">流媒体传输</span></a></span></span><span class="post-tag"><span class="post-meta-divider">-</span><a class="tag-item" href="/tags/Stream-Media/" style="--text-color:var(--hty-text-color)"><span class="post-meta-item-icon"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-price-tag-3-line"></use></svg></span><span class="tag-name">Stream Media</span></a><a class="tag-item" href="/tags/Reading/" style="--text-color:var(--hty-text-color)"><span class="post-meta-item-icon"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-price-tag-3-line"></use></svg></span><span class="tag-name">Reading</span></a><a class="tag-item" href="/tags/Mate/" style="--text-color:var(--hty-text-color)"><span class="post-meta-item-icon"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-price-tag-3-line"></use></svg></span><span class="tag-name">Mate</span></a></span></div></div></header><section class="post-body" itemprop="articleBody"><div class="post-content markdown-body" style="--smc-primary:#0078E7;"><p><strong>论文题目</strong>：<a target="_blank" rel="noopener" href="https://dl.acm.org/doi/abs/10.1145/3452296.3472893">XLINK：QoE-Driven Multi-Path QUIC Transport in Large-scale Video Services</a></p>
-<p><strong>所属会议</strong>：<strong>SIGCOMM 2021（CCF  A）</strong> </p>
+<meta name="twitter:image" content="https://taotangseek.github.io/2023/10/15/XLINK/image-20230918092559312.png"><script src="/js/ui/mode.js"></script></head><body><script defer src="https://cdn.jsdelivr.net/npm/animejs@latest"></script><script defer src="/js/ui/fireworks.js"></script><canvas class="fireworks"></canvas><div class="container"><a class="sidebar-toggle hty-icon-button" id="menu-btn"><div class="hamburger hamburger--spin" type="button"><span class="hamburger-box"><span class="hamburger-inner"></span></span></div></a><div class="sidebar-toggle sidebar-overlay"></div><aside class="sidebar"><script src="/js/sidebar.js"></script><ul class="sidebar-nav"><li class="sidebar-nav-item sidebar-nav-toc hty-icon-button sidebar-nav-active" data-target="post-toc-wrap" title="Table of Contents"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-list-ordered"></use></svg></li><li class="sidebar-nav-item sidebar-nav-overview hty-icon-button" data-target="site-overview-wrap" title="Overview"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-passport-line"></use></svg></li></ul><div class="sidebar-panel" id="site-overview-wrap"><div class="site-info mickey-mouse"><a class="site-author-avatar" href="/about/" title="Tao Tang"><img width="96" loading="lazy" src="/images/cat.png" alt="Tao Tang"><span class="site-author-status" title="永远相信美好的事情即将发生">😊</span></a><div class="site-author-name"><a href="/about/">Tao Tang</a></div><span class="site-name">blog | of TT</span><sub class="site-subtitle">TJU MS</sub><div class="site-desciption">welcome to my blog, you can contact me through the following contact information</div></div><nav class="site-state"><a class="site-state-item hty-icon-button icon-home" href="/" title="Home"><span class="site-state-item-icon"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-home-4-line"></use></svg></span></a><div class="site-state-item"><a href="/archives/" title="Archives"><span class="site-state-item-icon"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-archive-line"></use></svg></span><span class="site-state-item-count">3</span></a></div><div class="site-state-item"><a href="/categories/" title="Categories"><span class="site-state-item-icon"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-folder-2-line"></use></svg></span><span class="site-state-item-count">3</span></a></div><div class="site-state-item"><a href="/tags/" title="Tags"><span class="site-state-item-icon"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-price-tag-3-line"></use></svg></span><span class="site-state-item-count">8</span></a></div><a class="site-state-item hty-icon-button" href="/about/#comment" title="留言板"><span class="site-state-item-icon"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-clipboard-line"></use></svg></span></a></nav><hr style="margin-bottom:0.5rem"><div class="links-of-author"><a class="links-of-author-item hty-icon-button" rel="noopener" href="/images/qq.png" title="加我QQ ~~" target="_blank" style="color:#12B7F5"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-qq-line"></use></svg></a><a class="links-of-author-item hty-icon-button" rel="noopener" href="/images/weixin.jpg" title="加我微信 ~~" target="_blank" style="color:#1AAD19"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-wechat-2-line"></use></svg></a><a class="links-of-author-item hty-icon-button" rel="noopener" href="https://github.com/taotangSeek" title="GitHub" target="_blank" style="color:#6e5494"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-github-line"></use></svg></a><a class="links-of-author-item hty-icon-button" rel="noopener" href="tangtao@tju.edu.cn" title="E-Mail" target="_blank" style="color:#8E71C1"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-mail-line"></use></svg></a></div><hr style="margin:0.5rem 1rem"><div class="links"><a class="links-item hty-icon-button" href="/links/" title="我的小伙伴们" style="color:dodgerblue"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-genderless-line"></use></svg></a></div><br><a class="links-item hty-icon-button" id="toggle-mode-btn" href="javascript:;" title="Mode" style="color: #f1cb64"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-contrast-2-line"></use></svg></a></div><div class="sidebar-panel sidebar-panel-active" id="post-toc-wrap"><div class="post-toc"><div class="post-toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#XLINK"><span class="toc-number">1.</span> <span class="toc-text">XLINK:</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E2%85%A0-Introduction"><span class="toc-number">1.1.</span> <span class="toc-text">Ⅰ. Introduction</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E2%85%A1-Motivation"><span class="toc-number">1.2.</span> <span class="toc-text">Ⅱ. Motivation</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E2%85%A2-Experience-with-vanilla-Multi-Path-QUIC"><span class="toc-number">1.3.</span> <span class="toc-text">Ⅲ. Experience with vanilla Multi-Path QUIC</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E2%85%A3-XLINK-Design-Overview"><span class="toc-number">1.4.</span> <span class="toc-text">Ⅳ. XLINK Design Overview</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E2%85%A4-QoE-Driven-Scheduling-AND-Path-Management"><span class="toc-number">1.5.</span> <span class="toc-text">Ⅴ. QoE-Driven Scheduling AND Path Management</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E2%85%A5-PROTOCOL-AND-IMPLEMENTATION"><span class="toc-number">1.6.</span> <span class="toc-text">Ⅵ. PROTOCOL AND IMPLEMENTATION</span></a></li></ol></li></ol></div></div></div><div class="tag-cloud"><div class="tag-cloud-tags"><a href="/tags/Begin/" style="font-size: 12px; color: #999">Begin</a> <a href="/tags/Life/" style="font-size: 12px; color: #999">Life</a> <a href="/tags/Mate/" style="font-size: 30px; color: #0078e7">Mate</a> <a href="/tags/Multipath/" style="font-size: 30px; color: #0078e7">Multipath</a> <a href="/tags/Reading/" style="font-size: 12px; color: #999">Reading</a> <a href="/tags/Stream-Media/" style="font-size: 12px; color: #999">Stream Media</a> <a href="/tags/Vehicle/" style="font-size: 12px; color: #999">Vehicle</a> <a href="/tags/video-transmission/" style="font-size: 12px; color: #999">video transmission</a></div></div></aside><main class="sidebar-translate" id="content"><div id="post"><article class="hty-card post-block" itemscope itemtype="https://schema.org/Article"><link itemprop="mainEntityOfPage" href="https://taotangseek.github.io/2023/10/15/XLINK/"><span hidden itemprop="author" itemscope itemtype="https://schema.org/Person"><meta itemprop="name" content="Tao Tang"><meta itemprop="description"></span><span hidden itemprop="publisher" itemscope itemtype="https://schema.org/Organization"><meta itemprop="name" content="blog | of TT"></span><header class="post-header"><h1 class="post-title" itemprop="name headline">XLINK</h1><div class="post-meta"><div class="post-time" style="display:block"><span class="post-meta-item-icon"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-calendar-line"></use></svg></span> <time title="Created: 2023-10-15 20:51:40" itemprop="dateCreated datePublished" datetime="2023-10-15T20:51:40+08:00">2023-10-15</time><span class="post-meta-divider">-</span><span class="post-meta-item-icon"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-calendar-2-line"></use></svg></span> <time title="Modified: 2023-10-25 15:46:54" itemprop="dateModified" datetime="2023-10-25T15:46:54+08:00">2023-10-25</time></div><span class="post-count"><span class="post-symbolcount"><span class="post-meta-item-icon" title="Word count in article"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-file-word-line"></use></svg></span> <span title="Word count in article">6.6k</span><span class="post-meta-divider">-</span><span class="post-meta-item-icon" title="Reading time"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-timer-line"></use></svg></span> <span title="Reading time">24m</span></span></span><span class="post-busuanzi"><span class="post-meta-divider">-</span><span class="post-meta-item-icon" title="Views"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-eye-line"></use></svg> <span id="busuanzi_value_page_pv"></span></span></span><div class="post-classify"><span class="post-category"> <span class="post-meta-item-icon" style="margin-right:3px;"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-folder-line"></use></svg></span><span itemprop="about" itemscope itemtype="https://schema.org/Thing"><a class="category-item" href="/categories/%E6%B5%81%E5%AA%92%E4%BD%93%E4%BC%A0%E8%BE%93/" style="--text-color:var(--hty-text-color)" itemprop="url" rel="index"><span itemprop="text">流媒体传输</span></a></span></span><span class="post-tag"><span class="post-meta-divider">-</span><a class="tag-item" href="/tags/Multipath/" style="--text-color:var(--hty-text-color)"><span class="post-meta-item-icon"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-price-tag-3-line"></use></svg></span><span class="tag-name">Multipath</span></a><a class="tag-item" href="/tags/Mate/" style="--text-color:var(--hty-text-color)"><span class="post-meta-item-icon"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-price-tag-3-line"></use></svg></span><span class="tag-name">Mate</span></a><a class="tag-item" href="/tags/Stream-Media/" style="--text-color:var(--hty-text-color)"><span class="post-meta-item-icon"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-price-tag-3-line"></use></svg></span><span class="tag-name">Stream Media</span></a><a class="tag-item" href="/tags/Reading/" style="--text-color:var(--hty-text-color)"><span class="post-meta-item-icon"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-price-tag-3-line"></use></svg></span><span class="tag-name">Reading</span></a></span></div></div></header><section class="post-body" itemprop="articleBody"><div class="post-content markdown-body" style="--smc-primary:#0078E7;"><p><strong>论文题目</strong>：<a target="_blank" rel="noopener" href="https://dl.acm.org/doi/abs/10.1145/3452296.3472893">XLINK：QoE-Driven Multi-Path QUIC Transport in Large-scale Video Services</a></p>
+<p><strong>所属会议</strong>：<strong>SIGCOMM 2021（CCF  A）</strong></p>
 <p><strong>博客目的</strong>：论文阅读时的<strong>翻译总结</strong>，供同行学习参考</p>
 <h1 id="XLINK"><a href="#XLINK" class="headerlink" title="XLINK:"></a>XLINK:</h1><h2 id="Ⅰ-Introduction"><a href="#Ⅰ-Introduction" class="headerlink" title="Ⅰ. Introduction"></a>Ⅰ. Introduction</h2><ol>
-<li><strong>两个观察结果：</strong>短形式产品 <strong>视频摊位和 启动延迟</strong> 显著影响用户满意度 /  <strong>消费者希望看到更多的细节</strong>，更有参与感 &lt;促使 推动视频向更高的数据速率发展&gt; </li>
+<li><strong>两个观察结果：</strong>短形式产品 <strong>视频摊位和 启动延迟</strong> 显著影响用户满意度 /  <strong>消费者希望看到更多的细节</strong>，更有参与感 &lt;促使 推动视频向更高的数据速率发展&gt;</li>
 <li><strong>多路径传输的关注度高 👆，最著名 “MPTCP”  缺点：</strong>需要<strong>智能手机的操作系统级支持</strong>，非手机制造商的移动应用程序提供商来说，部署成本非常高.</li>
 </ol>
 <ul>
 <li>“ Quic 优势”: 与TCP不同，QUIC作为一种 **” 用户空间协议”**，可以作为应用的一部分进行安装和升级，因此作为端到端解决方案的多路径 QUIC 可以快速部署并不断发展</li>
 </ul>
 <ol start="3">
-<li><strong>问题：</strong>最近的提案 [7,13 ]被设计为支持通用流量，如  “ 网络和批量数据传输” ，<strong>并没有 “ 针对视频” 进行优化</strong> </li>
-<li><strong>尝试</strong>：将多路径 quic 部署到大规模网络中， <strong>理论是是比单路经要快</strong>，但是结果相反，有效地利用 聚合的无线资源 比预期的要 困难得多。 <ul>
+<li><strong>问题：</strong>最近的提案 [7,13 ]被设计为支持通用流量，如  “ 网络和批量数据传输” ，<strong>并没有 “ 针对视频” 进行优化</strong></li>
+<li><strong>尝试</strong>：将多路径 quic 部署到大规模网络中， <strong>理论是是比单路经要快</strong>，但是结果相反，有效地利用 聚合的无线资源 比预期的要 困难得多。<ul>
 <li>主要障碍：由 “快速变化和异构路径” 引起的 multi-path head-of-line （多路径线性头 MP-HoL）阻塞问题 &lt;”code_004”&gt;</li>
 <li>解决上述问题的一个方法是<strong>发送冗余包</strong>，过 去发送数据副本的多路径解决方案可能适用于  “ 音频服务” [22]，但它们不适用于视频，因为流量要大得多</li>
 </ul>
 </li>
 <li>令人惊讶的是，到目前为止，在大规模视频服务中使用  “ 多路径的可行性和好处仍然不清楚”</li>
-<li><strong>XLINk 关键思想</strong>：利用 QUIC 作为 “ 用户空间协议” 的机会，直接捕获视频 QoE 意图来控制多路径调度和管理 : <ul>
-<li> 不注重网络预测精准度，依靠客户机的**” QoE反馈” 来 “动态控制” 服务器调度<strong>程序中的</strong>数据包重新注入**的侵略性.</li>
-<li> 多并发 quic流下，通过 “ <strong>基于流优先级的重注入</strong>“ ，XLINK 根据流的紧急程度仔细确定发送顺序，从而实现更流畅的流体验</li>
-<li> 引入了<strong>基于视频帧优先级的重注入的第一视频帧加速</strong></li>
+<li><strong>XLINk 关键思想</strong>：利用 QUIC 作为 “ 用户空间协议” 的机会，直接捕获视频 QoE 意图来控制多路径调度和管理 :<ul>
+<li>不注重网络预测精准度，依靠客户机的**” QoE反馈” 来 “动态控制” 服务器调度<strong>程序中的</strong>数据包重新注入**的侵略性.</li>
+<li>多并发 quic流下，通过 “ <strong>基于流优先级的重注入</strong>“ ，XLINK 根据流的紧急程度仔细确定发送顺序，从而实现更流畅的流体验</li>
+<li>引入了<strong>基于视频帧优先级的重注入的第一视频帧加速</strong></li>
 </ul>
 </li>
-<li><strong>Contribution :</strong> <ol>
+<li><strong>Contribution :</strong><ol>
 <li>提出了生产环境中 <strong>多路径QUIC 视频传输</strong>的第一次大规模实验研究，以证明可行性和可部署性</li>
 <li>我们指出，从 “ 根本上” 解决上述挑战的<strong>关键</strong> 是**利用QUIC “ 作为用户空间协议”**，允许它与应用程序密切交互，并使用视频QoE进行调度和路径管理 。</li>
 <li>揭示了在以前的文献中较少讨论的关于性能、成本、移动性、兼容性和网络异质性的实际挑战，并分享了我们在应对这些挑战方面的经验</li>
@@ -123,7 +114,7 @@ document.addEventListener("pjax:success", sendPageView);</script><script>(functi
 </li>
 <li><p><strong>Multi-path in 5G：</strong></p>
 <ul>
-<li><p>5G ： </p>
+<li><p>5G ：</p>
 <ul>
 <li>优势：<strong>更高的带宽</strong></li>
 <li>劣势：<strong>传播损耗更大；穿透能力更弱；信号覆盖范围更小</strong></li>
@@ -156,9 +147,9 @@ document.addEventListener("pjax:success", sendPageView);</script><script>(functi
 <li>LTE走线相对稳定</li>
 <li><strong>Wi-Fi走线变化迅速</strong>，吞吐量从1.7s下降到2.2s，几乎为零<ul>
 <li><strong>拥塞窗口(CWND)无法跟上这种快速变化</strong></li>
-<li>结果: <ol>
+<li>结果:<ol>
 <li>调度器仍然在该路径上继续发送数据包</li>
-<li>如此快速的变化可能<strong>导致严重的HoL阻塞</strong>，因为视频帧无法传送到应用程序，直到**慢路径(Wi-Fi)**上所有停滞的数据包经过很长一段时间恢复. </li>
+<li>如此快速的变化可能<strong>导致严重的HoL阻塞</strong>，因为视频帧无法传送到应用程序，直到**慢路径(Wi-Fi)**上所有停滞的数据包经过很长一段时间恢复.</li>
 </ol>
 </li>
 </ul>
@@ -184,9 +175,7 @@ document.addEventListener("pjax:success", sendPageView);</script><script>(functi
 <li><p><strong>Deployment of vanilla-MP</strong></p>
 <ol>
 <li><p>我们通过在<strong>短视频服务</strong>中针对单路径**QUIC (SP)**进行大规模 A/B 测试，验证了vanilla-MP的有效性3:</p>
-<p><strong>(视频块请求完成时间(RCT)在一周内收集)</strong></p>
-<img src="/2023/10/15/XLINK/image-20230918093825351.png" loading="lazy">
-
+<p><strong>(视频块请求完成时间(RCT)在一周内收集)</strong><br><code>&lt;img src=&quot;./XLINK/image-20230918093825351.png&quot;&gt;</code></p>
 <ul>
 <li>Vanilla-MP 仅在中位数和90𝑡h百分位RCT中有效，并且可能导致更差的表现（第1,3,4和5天）。最大的中位数RCT退化为16%。</li>
 <li>Vanilla-MP 总是导致99𝑡百分位RCT的退化，甚至比SP(第4天和第7天)差28%</li>
@@ -205,22 +194,16 @@ document.addEventListener("pjax:success", sendPageView);</script><script>(functi
 <h2 id="Ⅳ-XLINK-Design-Overview"><a href="#Ⅳ-XLINK-Design-Overview" class="headerlink" title="Ⅳ. XLINK Design Overview"></a>Ⅳ. XLINK Design Overview</h2><p><strong>goal:</strong> 以<strong>最小的开销成本</strong>实现<strong>最佳的用户感知的QoE</strong>(ex:低延迟和小的重新缓冲)</p>
 <p><img src="/2023/10/15/XLINK/image-20230918101710249.png" alt="image-20230918101710249" loading="lazy"></p>
 <ul>
-<li><p>如上所示： XLINK被设计为<strong>部署在移动应用和边缘服务器中</strong>的<strong>轻量级端到</strong>端多路径<strong>QUIC扩展</strong></p>
-</li>
-<li><p>促使：<strong>多家庭移动客户</strong>端能够<strong>通过多个无线接口</strong>(例如，Wi-Fi和蜂窝)<strong>同时传输</strong>与远程服务器通信</p>
-</li>
-<li><p>特征：与过去的解决方案**(如MPQUIC和MPTCP)<strong>不同，</strong>这些解决方案无需应用程序的辅助**；</p>
-<pre><code>**XLINK由 跨层网络设计的最新趋势 驱动[41]**，并将**传输与视频应用**紧密集成在一起，同时实现高性能和成本效益。
-</code></pre>
-</li>
-<li><p>核心：利用<strong>QUIC作为用户空间协议</strong>的机会，在 多路径调度和管理中<strong>利用 用户感知的视频QoE。</strong></p>
-</li>
+<li>如上所示： XLINK被设计为<strong>部署在移动应用和边缘服务器中</strong>的<strong>轻量级端到</strong>端多路径<strong>QUIC扩展</strong></li>
+<li>促使：<strong>多家庭移动客户</strong>端能够<strong>通过多个无线接口</strong>(例如，Wi-Fi和蜂窝)<strong>同时传输</strong>与远程服务器通信</li>
+<li>特征：与过去的解决方案**(如MPQUIC和MPTCP)<strong>不同，</strong>这些解决方案无需应用程序的辅助**；<br><strong>XLINK由 跨层网络设计的最新趋势 驱动[41]<strong>，并将</strong>传输与视频应用</strong>紧密集成在一起，同时实现高性能和成本效益。</li>
+<li>核心：利用<strong>QUIC作为用户空间协议</strong>的机会，在 多路径调度和管理中<strong>利用 用户感知的视频QoE。</strong></li>
 </ul>
 <ol>
 <li><p><strong>体系结构上</strong>：XLINK的 QOS 驱动调度构建 在<strong>客户机-服务器反馈机制</strong>之上</p>
 <ul>
 <li>XLINK<strong>客户端</strong> 捕获用户<strong>感知的QoE信号</strong> (例如，视频播放器缓存的帧和视频播放器帧率)</li>
-<li>使用 <strong>ACK_MP扩展帧</strong>  (第6节) 将这些信号 传送到 <strong>远程视频服务器以控制其调度</strong><img src="/2023/10/15/XLINK/image-20230918103943018.png" alt="image-20230918103943018" style="zoom:80%;" loading="lazy"></li>
+<li>使用 <strong>ACK_MP扩展帧</strong>  (第6节) 将这些信号 传送到 <strong>远程视频服务器以控制其调度</strong><br><code>&lt;img src=&quot;./XLINK/image-20230918103943018.png&quot; alt=&quot;image-20230918103943018&quot; style=&quot;zoom:80%;&quot; /&gt;</code></li>
 <li><strong>QoE_control_signal字段</strong>的使用 控制了多路径的耦合和解耦, 它允许<strong>XLINK克服多路径HoL阻塞</strong>，而不会产生不必要的成本开销，这对于大规模部署至关重要 <strong>(第5.2节 阐述)</strong><ul>
 <li>XLINK通过提供 <strong>第一视频帧加速(5.1)<strong>、 <strong>无线感知主路径选择(5.3)</strong> 和 <strong>最快路径ACK_MP</strong>来进一步处理大路径延迟差异，以</strong>避免慢路径造成的过度延迟并改善视频启动</strong></li>
 </ul>
@@ -239,7 +222,7 @@ document.addEventListener("pjax:success", sendPageView);</script><script>(functi
 <p>[6] :  Costin Raiciu, Christoph Paasch, Sebastien Barre, Alan Ford, Michio Honda,<br>Fabien Duchene, Olivier Bonaventure, and Mark Handley. How hard can it be?<br>designing and implementing a deployable multipath {TCP}. In 9th {USENIX}<br>Symposium on Networked Systems Design and Implementation ({NSDI} 12), pages<br>399–412, 2012</p>
 </blockquote>
 <ul>
-<li><strong>基于流优先级的重注入 ：</strong> <ul>
+<li><strong>基于流优先级的重注入 ：</strong><ul>
 <li>考虑了<strong>QUIC请求视频不同部分</strong>的并发流</li>
 <li>它<strong>确保早期流</strong>的重注入数据包在后期流的数据包<strong>之前发送</strong>，从而防止流在传输时阻塞</li>
 </ul>
@@ -260,19 +243,17 @@ document.addEventListener("pjax:success", sendPageView);</script><script>(functi
 </li>
 <li><p><strong>协议层上</strong>：</p>
 <ul>
-<li><p>XLINK 建立在<strong>草案 [11] 中提出的多路径扩展的基础上</strong>，该扩展合并了<strong>PATH_STATUS和ACK_MP扩展帧</strong>来管理 路径状态并确认从不同路径接收的数据包。</p>
-</li>
+<li>XLINK 建立在<strong>草案 [11] 中提出的多路径扩展的基础上</strong>，该扩展合并了<strong>PATH_STATUS和ACK_MP扩展帧</strong>来管理 路径状态并确认从不同路径接收的数据包。</li>
 <li><blockquote>
 <p>[11] : Yanmei Liu, Yunfei Ma, Christian Huitema, Qing An, and Zhenyu Li. Multi-<br>path Extension for QUIC. Internet-Draft draft-liu-multipath-quic-02, Internet<br>Engineering Task Force, December 2020. Work in Progress.</p>
 </blockquote>
 </li>
-<li><p>唯一的区别是 当前的<strong>XLINK实现(在本实验中使用)在 ACK_MP 帧中作为附加字段发送QoE反馈</strong>，而不是在草案中指定的<strong>独立的QOE_CONTROL_SIGNALS帧中发送QoE反馈</strong></p>
-</li>
+<li>唯一的区别是 当前的<strong>XLINK实现(在本实验中使用)在 ACK_MP 帧中作为附加字段发送QoE反馈</strong>，而不是在草案中指定的<strong>独立的QOE_CONTROL_SIGNALS帧中发送QoE反馈</strong></li>
 </ul>
 </li>
 </ol>
 <h2 id="Ⅴ-QoE-Driven-Scheduling-AND-Path-Management"><a href="#Ⅴ-QoE-Driven-Scheduling-AND-Path-Management" class="headerlink" title="Ⅴ. QoE-Driven Scheduling AND Path Management"></a>Ⅴ. QoE-Driven Scheduling AND Path Management</h2><p>介绍：本节讨论 <strong>QoS驱动的多路径调度和路径管理</strong>的细节，这使 XLINK能够以最小的开销实现用户感知的优质qos</p>
-<p>整体 由 三个主要部分组成: </p>
+<p>整体 由 三个主要部分组成:</p>
 <ul>
 <li><strong>基于流和视频帧优先级的数据包重注入</strong><ul>
 <li>克服了多路径<strong>HoL阻塞、流阻塞</strong>以及<strong>视频启动时的过度延迟</strong></li>
@@ -294,7 +275,7 @@ document.addEventListener("pjax:success", sendPageView);</script><script>(functi
 <li><p>Why re-injection?： <strong>重注入用于解耦多个路径</strong></p>
 <ul>
 <li><strong>多路径HoL阻塞</strong>的根本原因： 是调度程序拆分数据包时多个路径的耦合，：</li>
-<li>(a) 未注入，，（b) 重注入后<img src="/2023/10/15/XLINK/image-20230918112726847.png" loading="lazy"></li>
+<li>(a) 未注入，，（b) 重注入后<br><code>&lt;img src=&quot;./XLINK/image-20230918112726847.png&quot; /&gt;</code></li>
 <li><strong>快速路径和慢速路径</strong> 发送的数据包相互补充，<strong>Client</strong> 等待两条路径都成功发送以<strong>获得整个视频</strong>块</li>
 <li><strong>重注入是一种技术</strong>，它允许我们通过<strong>使用冗余的重复数据包</strong>来解耦多条路径，如图3(b)所示</li>
 <li>重注入流程：<ol>
@@ -311,7 +292,7 @@ document.addEventListener("pjax:success", sendPageView);</script><script>(functi
 <li>在短视频传输中，<strong>视频播放器可以同时请求多个流</strong>，每个流下载视频的一小部分</li>
 </ul>
 </li>
-<li><strong>不同的重注模式：</strong><img src="/2023/10/15/XLINK/image-20230918134758263.png" loading="lazy"></li>
+<li><strong>不同的重注模式：</strong><br><code>&lt;img src=&quot;./XLINK/image-20230918134758263.png&quot;/&gt;</code></li>
 <li><strong>传统的重注入：</strong>如上图(a)所示，以附加方式工作，<strong>pkt 4</strong> 在慢路径上丢失，调度器只能在流2后面pkt_send_q的末尾重新注入它，这不是最优的。<ul>
 <li>由于流的内容按<strong>顺序播放</strong>，流2现在<strong>阻塞了</strong>流1的传输</li>
 <li>一个早期的流<strong>应该享有高优先级的重注入</strong>，这样 pkt 4 就会在<strong>流1之后被重注入</strong></li>
@@ -329,8 +310,8 @@ document.addEventListener("pjax:success", sendPageView);</script><script>(functi
 <li><p>引入 <strong>基于视频帧的优先级</strong>重注入，<strong>加速第一视频帧的交付</strong></p>
 <ul>
 <li>如果没有它，在存在<strong>较大路径延迟差异</strong>的情况下使用多路径可能会<strong>遭受视频帧阻塞效应</strong>导致的视频启动缓慢</li>
-<li>阻塞：<img src="/2023/10/15/XLINK/image-20230918135611129.png" loading="lazy"></li>
-<li>如果条件良好路径的<strong>拥塞窗口已满</strong>，多路径调度程序可能会将第一视频帧数据包<strong>放在条件不良的路径</strong>上，( 例如图(c)中蓝色的pkt 3，<strong>放在了慢的路径</strong>) </li>
+<li>阻塞：<br><code>&lt;img src=&quot;./XLINK/image-20230918135611129.png&quot; /&gt;</code></li>
+<li>如果条件良好路径的<strong>拥塞窗口已满</strong>，多路径调度程序可能会将第一视频帧数据包<strong>放在条件不良的路径</strong>上，( 例如图(c)中蓝色的pkt 3，<strong>放在了慢的路径</strong>)</li>
 <li>在这种情况下，<strong>基于流优先级的重注入</strong>提供的<strong>流级粒度是不够</strong>的，因为重注入的数据包仍然需要等待同一流中的其他视频帧被交付 <strong>(我想要的是在4后面，而不是在8后面)</strong></li>
 </ul>
 </li>
@@ -359,7 +340,8 @@ document.addEventListener("pjax:success", sendPageView);</script><script>(functi
 <li><p>解决方法：**XLINK **利用客户机的 <strong>QoE 反馈来控制 与数据包重注入相关的开销</strong>，同时确保用户感知的QoE</p>
 <blockquote>
 <p>背景：实际上，当 视频播放器 缓存视频块时，并不总是需要冗余数据包。</p>
-<p>​        如果<strong>缓冲区占用级别高</strong>，则到下一次可能的重新缓冲的剩余游戏时间很长，因此，使用重新注入的紧迫性较低；相反，如果<strong>缓冲区占用水平较低</strong>，则距离下一次可能的重新缓冲的时间很短，因此，使用重新注入的紧迫性很高。</p>
+<pre><code>如果**缓冲区占用级别高**，则到下一次可能的重新缓冲的剩余游戏时间很长，因此，使用重新注入的紧迫性较低；相反，如果**缓冲区占用水平较低**，则距离下一次可能的重新缓冲的时间很短，因此，使用重新注入的紧迫性很高。
+</code></pre>
 </blockquote>
 </li>
 <li><p><strong>知道客户机视频播放器的缓冲区占用率是用户感知的QoE的一个强有力的指示器。XLINK捕获缓冲区占用信息并将其发送回服务器以控制其重注入使用</strong></p>
@@ -378,8 +360,8 @@ document.addEventListener("pjax:success", sendPageView);</script><script>(functi
 <ol>
 <li><p><em><strong>Capturing QoE signals.</strong></em></p>
 <ul>
-<li><p>XLINK 捕获 QoE反馈信号的流程：</p>
-<img src="/2023/10/15/XLINK/image-20230918144016477.png" loading="lazy"></li>
+<li><p>XLINK 捕获 QoE反馈信号的流程：<br><code>&lt;img src=&quot;./XLINK/image-20230918144016477.png&quot; /&gt;</code></p>
+</li>
 <li><p><strong>MediaCacheService</strong> 响应来自媒体播放器的<strong>视频播放请求</strong>，并向服务器发送HTTP范围请求以获取视频块</p>
 </li>
 <li><p><strong>TNET</strong> 是淘宝客户端使用的 Android 网络 SDK，用于向 XLINK 发送QoE信号</p>
@@ -406,8 +388,8 @@ document.addEventListener("pjax:success", sendPageView);</script><script>(functi
 <li>需要提供灵活性来调<strong>整性能和成本之间的平衡</strong></li>
 </ol>
 </li>
-<li><p>因此，引入 了<strong>双阈值控制</strong>  ，其算法如下：</p>
-<img src="/2023/10/15/XLINK/image-20230919145957260.png" loading="lazy"></li>
+<li><p>因此，引入 了<strong>双阈值控制</strong>  ，其算法如下：<br><code>&lt;img src=&quot;./XLINK/image-20230919145957260.png&quot; /&gt;</code></p>
+</li>
 <li><p>算法内容：</p>
 <ol>
 <li><p>输入：如上所示的 四种QoE信号</p>
@@ -420,9 +402,9 @@ document.addEventListener("pjax:success", sendPageView);</script><script>(functi
 <li>&lt; 当视频不是用恒定比特率编码并且帧率很高时，我们建议使用 **𝑐𝑎𝑐h𝑒𝑑_𝑓𝑟𝑎𝑚𝑒𝑠 / 𝑓𝑝𝑠**来计算Δ𝑡，因为𝑏𝑝𝑠可能会表现出很大的变化 ; 如果帧速率非常低,计算基于𝑐𝑎𝑐ℎ𝑒𝑑_𝑏𝑦𝑡𝑒𝑠和𝑏𝑝𝑠进行&gt;</li>
 </ul>
 </li>
-<li><p>step2 : <em><strong>Double thresholding</strong></em> </p>
+<li><p>step2 : <em><strong>Double thresholding</strong></em></p>
 <ul>
-<li>我们将剩余的 <strong>播放时间Δ𝑡</strong> 与两个阈值 <strong>T<del>th1</del></strong> 和 <strong>T<del>th2</del></strong>   进行比较, 其中 <strong>T<del>th1</del></strong> &lt; <strong>T<del>th2</del></strong>  </li>
+<li>我们将剩余的 <strong>播放时间Δ𝑡</strong> 与两个阈值 <strong>T<del>th1</del></strong> 和 <strong>T<del>th2</del></strong>   进行比较, 其中 <strong>T<del>th1</del></strong> &lt; <strong>T<del>th2</del></strong></li>
 <li><strong>T<del>th1</del></strong> 用于 确保响应性：if  **Δ𝑡 &lt; T<del>th1</del>**  =&gt;  剩余播放时间太少。立即启动重注入</li>
 <li><strong>T<del>th2</del></strong> 用于成本效率 :  if  <strong>Δ𝑡 &gt; T<del>th2</del></strong>  =&gt;  缓存足够多，关闭重注入以降低成本</li>
 </ul>
@@ -433,14 +415,12 @@ document.addEventListener("pjax:success", sendPageView);</script><script>(functi
 </li>
 <li><p>进一步将<strong>Δ𝑡</strong>与飞行中数据包的估计最大投递时间 <strong>deliverTime<del>max</del></strong> 进行比较：</p>
 <ul>
-<li><p>&lt; :  则其中一条路径可能太慢，因此应该<strong>打开重注入</strong>以使用另一条路径<strong>加速数据包的传递</strong></p>
-</li>
+<li>&lt; :  则其中一条路径可能太慢，因此应该<strong>打开重注入</strong>以使用另一条路径<strong>加速数据包的传递</strong></li>
 <li><blockquote>
 <p>: 飞行的报文准时到达，关闭回注</p>
 </blockquote>
 </li>
-<li><p>其中 <strong>deliverTime<del>max</del></strong> : 包含未确认数据包的所有路径的<strong>𝑅𝑇𝑇加上它的方差𝛿</strong> 的最大值：<br><img src="/2023/10/15/XLINK/image-20230919152747416.png" alt="image-20230919152747416" loading="lazy"></p>
-</li>
+<li>其中 <strong>deliverTime<del>max</del></strong> : 包含未确认数据包的所有路径的<strong>𝑅𝑇𝑇加上它的方差𝛿</strong> 的最大值：<br><img src="/2023/10/15/XLINK/image-20230919152747416.png" alt="image-20230919152747416" loading="lazy"></li>
 </ul>
 </li>
 </ul>
@@ -449,8 +429,8 @@ document.addEventListener("pjax:success", sendPageView);</script><script>(functi
 </li>
 <li><p>为了说明该算法 如何在 <strong>快速变化的无线环境中</strong> 以更低的成本 <strong>克服 HoL 阻塞</strong>，绘制了<strong>客户端的缓冲区级别</strong>和<strong>重新注入数据包的数量与时间</strong>的动态关系：</p>
 <ol>
-<li><strong>Network traces</strong> &amp;&amp; <strong>vanillaMP：</strong><img src="/2023/10/15/XLINK/image-20230919153915630.png" loading="lazy"></li>
-<li><strong>re-injection without QoE control</strong>   &amp;&amp;  <strong>re-injection with QoE control</strong>：<img src="/2023/10/15/XLINK/image-20230919154051997.png" loading="lazy"></li>
+<li><strong>Network traces</strong> &amp;&amp; <strong>vanillaMP：</strong><br><code>&lt;img src=&quot;./XLINK/image-20230919153915630.png&quot;&gt;</code></li>
+<li><strong>re-injection without QoE control</strong>   &amp;&amp;  <strong>re-injection with QoE control</strong>：<br><code>&lt;img src=&quot;./XLINK/image-20230919154051997.png&quot;&gt;</code></li>
 <li>从上图我们可以看出：<ul>
 <li>随着 <strong>Path1</strong> 的恶化，缓冲级别多次降至零的 vanilla-MP 遭受了严重的<strong>多路径HoL阻塞</strong>，导致频繁的视频重新缓冲。</li>
 <li>重注入在克服多路径 HoL阻塞 方面是有效的，因此当 Path1 恶化时，**图c和图d **可以在其缓冲区中保持足够的缓存字节</li>
@@ -459,17 +439,17 @@ document.addEventListener("pjax:success", sendPageView);</script><script>(functi
 </li>
 </ol>
 </li>
-<li><p><em><strong>Performance and cost tradeoffs :</strong></em> </p>
+<li><p><em><strong>Performance and cost tradeoffs :</strong></em></p>
 </li>
 <li><p>两个阈值 <strong>T<del>th1</del> , T<del>th2</del></strong> 提供了在<strong>性能和成本</strong>之间进行<strong>权衡的灵活性</strong></p>
 </li>
 </ul>
 </li>
-<li><p><em><strong>QoE-aware path management:</strong></em> </p>
+<li><p><em><strong>QoE-aware path management:</strong></em></p>
 <ul>
 <li><p>本节描述 XLINK 的 <strong>Qos感知路径管理</strong> 如何处理异构网络中的<strong>路径延迟差异</strong></p>
 </li>
-<li><p>**Wireless-aware primary path selection: ** </p>
+<li><p>**Wireless-aware primary path selection: **</p>
 <ul>
 <li><p>XLINK 根据<strong>无线接口的类型</strong>仔细确定 初始化<strong>连接的主要路径</strong></p>
 </li>
@@ -501,7 +481,7 @@ document.addEventListener("pjax:success", sendPageView);</script><script>(functi
 <ul>
 <li><p>XLINK 允许从任何路径 <strong>返回ACK_MP</strong>，这提供了更大的灵活性</p>
 </li>
-<li><p>有两种基本策略: </p>
+<li><p>有两种基本策略:</p>
 <ol>
 <li>ACK_MP 在最快路径 <strong>(min-RTT路径)</strong> 上</li>
 <li>ACK_MP 在原始路径上</li>
@@ -513,8 +493,8 @@ document.addEventListener("pjax:success", sendPageView);</script><script>(functi
 </li>
 </ul>
 </li>
-<li><p>下面展示了 两种具有<strong>三次拥塞控制的ACK路径选择策略</strong>的效果：</p>
-<img src="/2023/10/15/XLINK/image-20230919163800482.png" loading="lazy"></li>
+<li><p>下面展示了 两种具有<strong>三次拥塞控制的ACK路径选择策略</strong>的效果：<br><code>&lt;img src=&quot;./XLINK/image-20230919163800482.png&quot;&gt;</code></p>
+</li>
 <li><p>如上所示，测量 调整 <strong>两条路径之间的路径RTT比率</strong>来获得4MB的负载 的请求完成时间</p>
 <ul>
 <li>随着延迟比的增大，<strong>最快路径上的ACK_MP开始显示出优势</strong></li>
@@ -526,7 +506,8 @@ document.addEventListener("pjax:success", sendPageView);</script><script>(functi
 </ul>
 </li>
 </ol>
-<h2 id="Ⅵ-PROTOCOL-AND-IMPLEMENTATION"><a href="#Ⅵ-PROTOCOL-AND-IMPLEMENTATION" class="headerlink" title="Ⅵ. PROTOCOL AND IMPLEMENTATION"></a>Ⅵ. PROTOCOL AND IMPLEMENTATION</h2><p>​        我们将在本节中<strong>描述XLINK的协议和实现</strong>,我们从 XLINK 如何将<strong>QUIC扩展到多路径开始</strong>，然后 将 <strong>XLINK集成到android应用程序和视频服务</strong>中.</p>
+<h2 id="Ⅵ-PROTOCOL-AND-IMPLEMENTATION"><a href="#Ⅵ-PROTOCOL-AND-IMPLEMENTATION" class="headerlink" title="Ⅵ. PROTOCOL AND IMPLEMENTATION"></a>Ⅵ. PROTOCOL AND IMPLEMENTATION</h2><pre><code>我们将在本节中**描述XLINK的协议和实现**,我们从 XLINK 如何将**QUIC扩展到多路径开始**，然后 将 **XLINK集成到android应用程序和视频服务**中.
+</code></pre>
 <ol>
 <li><p>XLINK 是基于我们的 <strong>多路径QUIC草案[11]</strong> 实现的，它以最小的修改将 IETF QUIC 扩展到多路径</p>
 <ul>
@@ -534,10 +515,8 @@ document.addEventListener("pjax:success", sendPageView);</script><script>(functi
 <p>[11] : Yanmei Liu, Yunfei Ma, Christian Huitema, Qing An, and Zhenyu Li. Multipath Extension for QUIC. Internet-Draft draft-liu-multipath-quic-02, Internet Engineering Task Force, December 2020. Work in Progress.</p>
 </blockquote>
 </li>
-<li><p>与过去的提案 [7] 严重依赖于“单流”概念不同，我们在<strong>双向路径概念的基础上扩展了多路径</strong>，这很容易<strong>适应蜂窝和wifi链路的性质</strong>，这些链路覆盖了QUIC中的大多数多路径应用，同时保持设计简单易于实现.</p>
-</li>
-<li><p>通过这样做，我们能够<strong>重复使用大多数当前QUIC传输设计</strong>，唯一增加了<strong>三个新框架</strong>。<br>更重要的是，我们的设计<strong>支持QoE反馈</strong>，这是启用 XLINK 基于反馈的动态调度所必需的</p>
-</li>
+<li>与过去的提案 [7] 严重依赖于“单流”概念不同，我们在<strong>双向路径概念的基础上扩展了多路径</strong>，这很容易<strong>适应蜂窝和wifi链路的性质</strong>，这些链路覆盖了QUIC中的大多数多路径应用，同时保持设计简单易于实现.</li>
+<li>通过这样做，我们能够<strong>重复使用大多数当前QUIC传输设计</strong>，唯一增加了<strong>三个新框架</strong>。<br>更重要的是，我们的设计<strong>支持QoE反馈</strong>，这是启用 XLINK 基于反馈的动态调度所必需的</li>
 </ul>
 </li>
 <li><p><strong>Key design points</strong> :</p>
@@ -553,7 +532,7 @@ document.addEventListener("pjax:success", sendPageView);</script><script>(functi
 <li><p><em><strong>Multi-path initialization</strong></em>：</p>
 <ul>
 <li><strong>多路径路径初始化过程</strong>如下所示：<br><img src="/2023/10/15/XLINK/image-20230918202755804.png" alt="image-20230918202755804" loading="lazy"></li>
-<li>XLINK 首先以与 <strong>单路径QUIC相同的方式 <strong>初始化主路径, <strong>不同之处</strong>是在</strong>第一次握手期间</strong>，客户端包含一个<strong>𝑒𝑛𝑎𝑏𝑙𝑒_𝑚𝑢𝑙𝑡𝑝𝑎𝑡</strong>传输参数 <ul>
+<li>XLINK 首先以与 <strong>单路径QUIC相同的方式 <strong>初始化主路径, <strong>不同之处</strong>是在</strong>第一次握手期间</strong>，客户端包含一个<strong>𝑒𝑛𝑎𝑏𝑙𝑒_𝑚𝑢𝑙𝑡𝑝𝑎𝑡</strong>传输参数<ul>
 <li>如果服务器回复一个<strong>𝑒𝑛𝑎𝑏𝑙𝑒_𝑚𝑢𝑙𝑡𝑝𝑎𝑡参数</strong>，那么两个终端主机都知道<strong>支持多路径</strong></li>
 <li>否则，它们会<strong>退回到单路径QUIC</strong>。</li>
 </ul>
@@ -581,7 +560,7 @@ document.addEventListener("pjax:success", sendPageView);</script><script>(functi
 <blockquote>
 <p>后续论文内容非论文设计核心内容，读者可通过论文查看</p>
 </blockquote>
-</div><ul class="post-copyright"><li class="post-copyright-author"><strong>Post author: </strong>Tao Tang</li><li class="post-copyright-link"><strong>Post link: </strong><a href="https://taotangseek.github.io/2023/10/15/XLINK/" title="XLINK">https://taotangseek.github.io/2023/10/15/XLINK/</a></li><li class="post-copyright-license"><strong>Copyright Notice: </strong>All articles in this blog are licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank" rel="noopener" title="CC BY-NC-SA 4.0 "><svg class="icon"><use xlink:href="#icon-creative-commons-line"></use></svg><svg class="icon"><use xlink:href="#icon-creative-commons-by-line"></use></svg><svg class="icon"><use xlink:href="#icon-creative-commons-nc-line"></use></svg><svg class="icon"><use xlink:href="#icon-creative-commons-sa-line"></use></svg></a> unless otherwise stated.</li></ul></section></article><div class="post-nav"><div class="post-nav-item"></div><div class="post-nav-item"><a class="post-nav-next" href="/2021/12/16/hello-world/" rel="next" title="Hello World"><span class="post-nav-text">Hello World</span><svg class="icon" aria-hidden="true"><use xlink:href="#icon-arrow-right-s-line"></use></svg></a></div></div></div><div class="hty-card" id="comment"><div class="comment-tooltip text-center"><span>如果您有任何关于博客内容的相关意见，欢迎前往通过邮件与我交流：tangtao@tju.edu.cn。</span><br></div></div></main><footer class="sidebar-translate" id="footer"><div class="copyright"><span>&copy; 2021 – 2023 </span><span class="with-love" id="animate"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-cloud-line"></use></svg></span><span class="author"> Tao Tang</span></div><div class="powered"><span>Powered by <a href="https://hexo.io" target="_blank" rel="noopener">Hexo</a> v6.0.0</span><span class="footer-separator">|</span><span>Theme - <a rel="noopener" href="https://github.com/YunYouJun/hexo-theme-yun" target="_blank"><span>Yun</span></a> v1.7.0</span></div><div class="live-time"><span>Tao Tang 的主页博客已默默的运行</span><span id="display_live_time"></span><span class="moe-text">(●'◡'●)</span><script>function blog_live_time() {
+</div><ul class="post-copyright"><li class="post-copyright-author"><strong>Post author: </strong>Tao Tang</li><li class="post-copyright-link"><strong>Post link: </strong><a href="https://taotangseek.github.io/2023/10/15/XLINK/" title="XLINK">https://taotangseek.github.io/2023/10/15/XLINK/</a></li><li class="post-copyright-license"><strong>Copyright Notice: </strong>All articles in this blog are licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank" rel="noopener" title="CC BY-NC-SA 4.0 "><svg class="icon"><use xlink:href="#icon-creative-commons-line"></use></svg><svg class="icon"><use xlink:href="#icon-creative-commons-by-line"></use></svg><svg class="icon"><use xlink:href="#icon-creative-commons-nc-line"></use></svg><svg class="icon"><use xlink:href="#icon-creative-commons-sa-line"></use></svg></a> unless otherwise stated.</li></ul></section></article><div class="post-nav"><div class="post-nav-item"><a class="post-nav-prev" href="/2023/10/25/CellFusion/" rel="prev" title="CellFusion：车辆与云端的视频交互(一)"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-arrow-left-s-line"></use></svg><span class="post-nav-text">CellFusion：车辆与云端的视频交互(一)</span></a></div><div class="post-nav-item"><a class="post-nav-next" href="/2021/12/16/hello-world/" rel="next" title="Hello World"><span class="post-nav-text">Hello World</span><svg class="icon" aria-hidden="true"><use xlink:href="#icon-arrow-right-s-line"></use></svg></a></div></div></div><div class="hty-card" id="comment"><div class="comment-tooltip text-center"><span>如果您有任何关于博客内容的相关意见，欢迎前往通过邮件与我交流：tangtao@tju.edu.cn。</span><br></div></div></main><footer class="sidebar-translate" id="footer"><div class="copyright"><span>&copy; 2021 – 2023 </span><span class="with-love" id="animate"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-cloud-line"></use></svg></span><span class="author"> Tao Tang</span></div><div class="powered"><span>Powered by <a href="https://hexo.io" target="_blank" rel="noopener">Hexo</a> v6.0.0</span><span class="footer-separator">|</span><span>Theme - <a rel="noopener" href="https://github.com/YunYouJun/hexo-theme-yun" target="_blank"><span>Yun</span></a> v1.7.0</span></div><div class="live-time"><span>Tao Tang 的主页博客已默默的运行</span><span id="display_live_time"></span><span class="moe-text">(●'◡'●)</span><script>function blog_live_time() {
   setTimeout(blog_live_time, 1000);
   const start = new Date('2021-12-16T00:00:00');
   const now = new Date();
